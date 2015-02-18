@@ -13,8 +13,7 @@
 	<packaging>rpm</packaging>
 
 	<properties>
-		<rpm.username>geoserver</rpm.username>
-		<rpm.mainClass>org.cwatch.geoserver.CwatchGeoserverMain</rpm.mainClass>
+		<rpm.username>starback</rpm.username>
 	</properties>
 
 	<dependencies>
