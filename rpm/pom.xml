@@ -37,4 +37,17 @@
 	</build>
 	 -->
 
+	<distributionManagement>
+		<repository>
+			<id>cwatch-repo</id>
+			<name>cwatch-repo-releases</name>
+			<url>https://cwatch.org/repo/libs-release-local</url>
+		</repository>
+		<snapshotRepository>
+			<id>cwatch-repo</id>
+			<name>cwatch-repo-snapshots</name>
+			<url>https://cwatch.org/repo/libs-snapshot-local</url>
+		</snapshotRepository>
+	</distributionManagement>
+
 </project>
