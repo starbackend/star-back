@@ -10,12 +10,5 @@ import org.springframework.context.annotation.PropertySource;
 @PropertySource({"classpath:/star-back.properties"})
 @Import({CwatchServiceConfiguration.class, CwatchSplitConfiguration.class})
 public class StarBackConfiguration {
-
-	static {
-		System.setProperty(
-				"org.apache.activemq.default.directory.prefix",
-				System.getProperty("org.apache.activemq.default.directory.prefix", "") + "data/"
-		);
-	}
 	
 }
