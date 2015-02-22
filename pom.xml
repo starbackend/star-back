@@ -11,6 +11,8 @@
 	
 	<properties>
 		<star-env.appname>star-back</star-env.appname>
+		<cwatch-service.version>0.0.1-SNAPSHOT</cwatch-service.version>
+		<cwatch-split.version>0.0.1-SNAPSHOT</cwatch-split.version>
 	</properties>
 
 	<version>0.0.1-SNAPSHOT</version>
