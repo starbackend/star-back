@@ -9,15 +9,15 @@
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	
+	<version>0.0.1-SNAPSHOT</version>
+	<artifactId>star-back</artifactId>
+	<packaging>pom</packaging>
+
 	<properties>
 		<star-env.appname>star-back</star-env.appname>
 		<cwatch-service.version>0.0.1-SNAPSHOT</cwatch-service.version>
 		<cwatch-split.version>0.0.1-SNAPSHOT</cwatch-split.version>
 	</properties>
-
-	<version>0.0.1-SNAPSHOT</version>
-	<artifactId>star-back</artifactId>
-	<packaging>pom</packaging>
 
 	<build>
 		<plugins>
@@ -45,23 +45,20 @@
 		</plugins>
 	</build>
 
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>star</groupId>
+				<artifactId>star-back</artifactId>
+				<type>tar.gz</type>
+				<classifier>project</classifier>
+				<version>0.0.1-SNAPSHOT</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+	
 	<modules>
-		<module>core</module>
+		<module>base</module>
 	</modules>
-	
-	<profiles>
-		<profile>
-			<activation>
-				<os>
-					<name>linux</name>
-				</os>
-			</activation>
-			<modules>
-				<module>rpm</module>
-				<module>it</module>
-			</modules>
-		</profile>
-	</profiles>
-	
 
 </project>
