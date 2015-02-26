@@ -20,17 +20,18 @@
 		<dependency>
 			<groupId>org.cwatch</groupId>
 			<artifactId>cwatch-service-core</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>org.cwatch</groupId>
 			<artifactId>cwatch-service-cdf</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>org.cwatch</groupId>
 			<artifactId>cwatch-split-core</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>org.cwatch</groupId>
+			<artifactId>cwatch-boot-wars</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.activemq</groupId>
