@@ -34,13 +34,12 @@
 			<artifactId>cwatch-boot-wars</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>org.apache.activemq</groupId>
-			<artifactId>activemq-kahadb-store</artifactId>
+			<groupId>org.cwatch</groupId>
+			<artifactId>cwatch-boot-activemq</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.activemq</groupId>
-			<artifactId>activemq-web-console</artifactId>
-			<type>war</type>
+			<artifactId>activemq-kahadb-store</artifactId>
 		</dependency>
 
 	</dependencies>
@@ -52,7 +51,51 @@
 				<filtering>true</filtering>
 			</resource>
 		</resources>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-dependency-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>rpm-copy-webxml</id>
+						<phase>prepare-package</phase>
+						<goals>
+							<goal>copy</goal>
+						</goals>
+						<configuration>
+							<artifactItems>
+								<artifactItem>
+									<groupId>org.cwatch</groupId>
+									<artifactId>cwatch-boot-rpm</artifactId>
+									<version>0.0.4-SNAPSHOT</version>
+									<type>xml</type>
+									<classifier>webxml</classifier>
+									<outputDirectory>${project.build.directory}/res/${rpm.adminweb.dir}/conf</outputDirectory>
+									<destFileName>web.xml</destFileName>
+								</artifactItem>
+							</artifactItems>
+						</configuration>
+					</execution>
+					<execution>
+						<id>rpm-unpack-wars</id>
+						<phase>prepare-package</phase>
+						<goals>
+							<goal>unpack</goal>
+						</goals>
+						<configuration>
+							<artifactItems>
+								<artifactItem>
+									<groupId>org.apache.activemq</groupId>
+									<artifactId>activemq-web-console</artifactId>
+									<type>war</type>
+									<outputDirectory>${project.build.directory}/res/${rpm.adminweb.dir}/webapps/activemq</outputDirectory>
+								</artifactItem>
+							</artifactItems>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
 	</build>
-
 
 </project>

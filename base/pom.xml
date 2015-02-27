@@ -24,7 +24,7 @@
 	<modules>
 		<module>core</module>
 	</modules>
-	
+
 	<profiles>
 		<profile>
 			<activation>
@@ -38,6 +38,8 @@
 			</modules>
 		</profile>
 	</profiles>
-	
+
+
+
 
 </project>
