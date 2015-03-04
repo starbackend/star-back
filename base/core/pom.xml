@@ -67,7 +67,6 @@
 								<artifactItem>
 									<groupId>org.cwatch</groupId>
 									<artifactId>cwatch-boot-rpm</artifactId>
-									<version>0.0.4-SNAPSHOT</version>
 									<type>xml</type>
 									<classifier>webxml</classifier>
 									<outputDirectory>${project.build.directory}/res/${rpm.adminweb.dir}/conf</outputDirectory>

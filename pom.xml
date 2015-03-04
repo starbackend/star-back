@@ -6,7 +6,7 @@
 	<parent>
 		<groupId>star</groupId>
 		<artifactId>star-boot-base</artifactId>
-		<version>0.0.1-SNAPSHOT</version>
+		<version>0.0.1</version>
 		<relativePath>../star-boot/base</relativePath>
 	</parent>
 	
@@ -16,8 +16,8 @@
 
 	<properties>
 		<star-env.appname>star-back</star-env.appname>
-		<cwatch-service.version>0.0.1-SNAPSHOT</cwatch-service.version>
-		<cwatch-split.version>0.0.1-SNAPSHOT</cwatch-split.version>
+		<cwatch-service.version>0.0.1</cwatch-service.version>
+		<cwatch-split.version>0.0.1</cwatch-split.version>
 	</properties>
 
 	<build>
@@ -48,6 +48,16 @@
 
 	<dependencyManagement>
 		<dependencies>
+			<dependency>
+				<groupId>star</groupId>
+				<artifactId>star-back-core</artifactId>
+				<version>0.0.1-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>star</groupId>
+				<artifactId>star-back-rpm</artifactId>
+				<version>0.0.1-SNAPSHOT</version>
+			</dependency>
 			<dependency>
 				<groupId>star</groupId>
 				<artifactId>star-back</artifactId>

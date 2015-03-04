@@ -16,7 +16,6 @@
 		<dependency>
 			<groupId>star</groupId>
 			<artifactId>star-back-rpm</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
 			<type>rpm</type>
 		</dependency>
 		<dependency>

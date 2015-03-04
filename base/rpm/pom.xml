@@ -20,7 +20,6 @@
 		<dependency>
 			<groupId>star</groupId>
 			<artifactId>star-back-core</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
 
