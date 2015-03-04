@@ -22,7 +22,6 @@
 
 	<modules>
 		<module>core</module>
-		<module>nostarenv</module>
 	</modules>
 
 	<profiles>
