@@ -6,7 +6,7 @@
 	<parent>
 		<groupId>star</groupId>
 		<artifactId>star-boot-base</artifactId>
-		<version>0.0.2</version>
+		<version>0.0.3</version>
 		<relativePath>../star-boot/base</relativePath>
 	</parent>
 	
@@ -16,8 +16,6 @@
 
 	<properties>
 		<star-env.appname>star-back</star-env.appname>
-		<cwatch-service.version>0.0.1</cwatch-service.version>
-		<cwatch-split.version>0.0.1</cwatch-split.version>
 	</properties>
 
 	<scm>
