@@ -84,28 +84,7 @@
 		</plugins>
 	</build>	 
 	 
-	<pluginRepositories>
-		<pluginRepository>
-			<id>cwatch-repo-releases</id>
-			<releases>
-				<enabled>true</enabled>
-			</releases>
-			<snapshots>
-				<enabled>false</enabled>
-			</snapshots>
-			<url>https://cwatch.org/repo/releases</url>
-		</pluginRepository>
-		<pluginRepository>
-			<id>cwatch-repo-snapshots</id>
-			<releases>
-				<enabled>false</enabled>
-			</releases>
-			<snapshots>
-				<enabled>true</enabled>
-			</snapshots>
-			<url>https://cwatch.org/repo/libs-snapshot-local</url>
-		</pluginRepository>
-	</pluginRepositories>
+
 
 	<distributionManagement>
 		<repository>
