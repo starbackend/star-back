@@ -20,6 +20,12 @@
 		<cwatch-split.version>0.0.1</cwatch-split.version>
 	</properties>
 
+	<scm>
+		<connection>scm:git:https://github.com/starbackend/star-back.git</connection>
+		<developerConnection>scm:git:https://github.com/starbackend/star-back.git</developerConnection>
+		<tag>HEAD</tag>
+	</scm>
+
 	<build>
 		<plugins>
 			<plugin>
