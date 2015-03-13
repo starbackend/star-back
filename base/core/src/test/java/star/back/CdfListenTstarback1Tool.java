@@ -4,7 +4,7 @@ import org.apache.activemq.camel.component.ActiveMQComponent;
 import org.apache.activemq.camel.component.ActiveMQConfiguration;
 import org.apache.camel.model.ContextScanDefinition;
 import org.apache.camel.spring.CamelContextFactoryBean;
-import org.cwatch.service.cdf.CdfForwardRouteBuilder;
+import org.cwatch.service.cdf.CwatchCdfForwardRouteBuilder;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.context.annotation.Bean;
@@ -12,7 +12,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
 
 @Configuration
-@Import(CdfForwardRouteBuilder.class)
+@Import(CwatchCdfForwardRouteBuilder.class)
 public class CdfListenTstarback1Tool implements CommandLineRunner {
 
 	@Bean
